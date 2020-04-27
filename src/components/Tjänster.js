@@ -12,9 +12,9 @@ class Tjänster extends Component{
                 <Steg/>
                 <div className="tjänster-container">
                 {(tjänster.map(
-                    tjänst =>
+                    (tjänst, i)=>
                     <Card 
-                    id={tjänst.id}
+                    key={i}
                     title={tjänst.title}
                     text={tjänst.text}
                     image={tjänst.image}
